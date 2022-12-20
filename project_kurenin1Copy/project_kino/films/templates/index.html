@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static '\css\style.css' %}">
+</head>
+
+<body>
+    <div class="form">
+        <div class="films">
+            <h1>Афиша для кинотеатра</h1>
+            <div class="flex" style="display: flex;">
+                <p>Название фильма:</p> <input type="text" value="Avatar" placeholder="Введите название фильма">
+            </div>
+
+            <div class="flex" style="display: flex;">
+                <P>Категория(жанр)</P> <select class="genre">
+                    <option value="1">Категория не выбрана</option>
+                    <option value="2">Хоррор</option>
+                    <option value="3">Приключения</option>
+                    <option value="4">Фантастика</option>
+                </select>
+            </div>
+            <div class="flex">
+                <P>Дата выпуска фильма:</P> <input type="date">
+            </div>
+            <div class="flex">
+                <p>Актёры</p> <select class="actors">
+                    <option value="1">Не выбрано</option>
+                    <option value="2">Райан Гослинг</option>
+                    <option value="3">Джеймс Кемеррон</option>
+                    <option value="4">Name Name</option>
+                </select>
+            </div>
+            <div class="flex">
+                <p>Дата показа фильма:</p> <input type="date">
+            </div>
+        </div>
+        <p> (Попробуйте авторизоваться за пользователя FilmEnjoyer с паролем ilovefilms)</p>
+    </div>
+
+</body>
+
+</html>
